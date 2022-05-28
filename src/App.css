@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.navBar {
+  padding: 1%;
+  margin-bottom: 1%;
+  background-color: #3DC4FC;
+}
+
+.beerList {
+  list-style-type: none;
+}
