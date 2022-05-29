@@ -28,20 +28,47 @@ function ListBeers() {
         return <h3> Loading </h3>;
     }
 
+    const handleBeerSearch = async (event) => {
+        //console.log(event.target.value);
+        try {
+            const response = await axios.get(`https://ih-beers-api2.herokuapp.com/beers/search?q=${event.target.value}`);
+            //console.log(response.data);
+            setListBeers(response.data);    
+        }
+        catch (err) {
+            console.log(err)
+        }
+    }
+
 
   return (
     <div>
+    <form>
+        <input type='text' name='search' onChange={handleBeerSearch} />
+        <br />
+        <button> Buscar </button>
+    </form>
+
     {
         listBeers.map((eachBeer) => {
             return (
                 <Link key={eachBeer._id} className="beerList" to={`/beers/${eachBeer._id}`}>
-                    <img src={eachBeer.image_url} alt='img' width={50} />
-                    <h2> {eachBeer.name} </h2>
-                    <p> {eachBeer.tagline} </p>
-                    <p> <strong>Created by:</strong>{eachBeer.contributed_by} </p>
+                <div className='oneBeer'>
+                    <div className='imgBeer'>
+                        <img src={eachBeer.image_url} alt='img' width={50} />
+                    </div>
+                    <div className='datosBeer'>
+                        <h3> {eachBeer.name} </h3>
+                        <p> {eachBeer.tagline} </p>
+                        <p> <strong>Created by: </strong>{eachBeer.contributed_by} </p>
+                    </div>
+                </div>
+                <hr />
                 </Link>
+
             )
         })
+
     }   
     </div>
   )

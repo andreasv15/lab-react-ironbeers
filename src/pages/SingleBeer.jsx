@@ -34,14 +34,13 @@ function SingleBeer() {
 
   return (
     <div>
-        
-            <img src={beerDetail.image_url} alt='img' width={50} /> 
-            <p> {beerDetail.name} </p>                   
-            <p> {beerDetail.tagline} </p>                   
-            <p> {beerDetail.first_brewed} </p>                   
-            <p> {beerDetail.attenuation_level} </p>                   
-            <p> {beerDetail.description} </p>                   
-            <p> {beerDetail.contributed_by} </p>
+        <img src={beerDetail.image_url} alt='img' width={60} /> 
+        <h3> <strong>Name: </strong> {beerDetail.name} </h3>                   
+        <p> <strong>Tagline: </strong>{beerDetail.tagline} </p>                   
+        <p> <strong> First Brewed: </strong> {beerDetail.first_brewed} </p>                   
+        <p> <strong> Attenuation level: </strong> {beerDetail.attenuation_level} </p>                   
+        <p> <strong> Description: </strong> {beerDetail.description} </p>                   
+        <p> <strong> Contributed by: </strong> {beerDetail.contributed_by} </p>
     </div>
   )
 }

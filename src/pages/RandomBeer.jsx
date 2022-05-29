@@ -24,14 +24,13 @@ function RandomBeer() {
 
   return (
     <div>
-            <img src={randomBeer.image_url} alt='img' width={50} /> 
-            <p> {randomBeer.name} </p>                   
-            <p> {randomBeer.tagline} </p>                   
-            <p> {randomBeer.first_brewed} </p>                   
-            <p> {randomBeer.attenuation_level} </p>                   
-            <p> {randomBeer.description} </p>                   
-            <p> {randomBeer.contributed_by} </p>
-
+            <img src={randomBeer.image_url} alt='img' width={60} /> 
+            <h3> <strong>Name: </strong> {randomBeer.name} </h3>                   
+            <p> <strong>Tagline: </strong>{randomBeer.tagline} </p>                   
+            <p> <strong> First Brewed: </strong> {randomBeer.first_brewed} </p>                   
+            <p> <strong> Attenuation level: </strong> {randomBeer.attenuation_level} </p>                   
+            <p> <strong> Description: </strong> {randomBeer.description} </p>                   
+            <p> <strong> Contributed by: </strong> {randomBeer.contributed_by} </p>
     </div>
   )
 }

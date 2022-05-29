@@ -7,7 +7,7 @@ import randomBeerImg from '../assets/random-beer.png'
 
 function Home() {
   return (
-    <div>
+    <div id='menu'>
         <NavLink to="/beers"> 
             <img src={allBeersImg} alt='img' />
             <h2> All Beers </h2>
@@ -18,6 +18,8 @@ function Home() {
                 specimen book.
             </p>        
          </NavLink>
+         <br />
+         <br />
         <NavLink to="/random-beer"> 
         <img src={randomBeerImg} alt='img' />
             <h2> Random Beer </h2>
@@ -28,6 +30,8 @@ function Home() {
                 specimen book.
             </p>        
          </NavLink> 
+         <br />
+         <br />
         <NavLink to="/new-beer"> 
         <img src={newBeerImg} alt='img' />
             <h2> New Beer </h2>

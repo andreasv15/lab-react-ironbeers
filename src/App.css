@@ -46,3 +46,34 @@
 .beerList {
   list-style-type: none;
 }
+
+.oneBeer {
+  margin: 10px;
+  display: flex;
+}
+
+a:link { 
+  text-decoration: none;
+  color: black; 
+}
+a:visited { 
+  text-decoration: none;
+  color: black; 
+}
+a:hover { 
+  text-decoration: none;
+  color: black; 
+}
+a:active { 
+  text-decoration: none;
+  color: black; 
+}
+
+.imgBeer {
+  margin-right: 50px;
+}
+
+#menu {
+  width: 700px;
+  margin: auto;
+}

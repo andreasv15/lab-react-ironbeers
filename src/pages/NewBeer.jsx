@@ -53,28 +53,35 @@ function NewBeer() {
   return (
     <div>
         <form onSubmit={handleSubmitForm}>
-        <label htmlFor='name'> Name </label>
+            <strong><label htmlFor='name'> Name </label></strong>
+            <br />
             <input type='text' name='name' value={name} onChange={handleNameChange} />
             <br />
-            <label htmlFor='tagline'> Tagline </label>
+            <strong><label htmlFor='tagline'> Tagline </label></strong>
+            <br />
             <input type='text' name='tagline' value={tagline} onChange={handleTaglineChange} />
             <br />
-            <label htmlFor='description'> Description </label>
+            <strong><label htmlFor='description'> Description </label></strong>
+            <br />
             <textarea type='text' name='description' value={description} onChange={handleDescriptionChange}></textarea>
             <br />
-            <label htmlFor='firstBrewed'> First Brewed </label>
+            <strong><label htmlFor='firstBrewed'> First Brewed </label></strong>
+            <br />
             <input type='text' name='firstBrewed' value={firstBrewed} onChange={handleFirstBrewedChange} />
             <br />
-            <label htmlFor='brewersTips'> Brewers Tips </label>
+            <strong><label htmlFor='brewersTips'> Brewers Tips </label></strong>
+            <br />
             <input type='text' name='brewersTips' value={brewersTips} onChange={handleBrewersTipsChange} />
             <br />
-            <label htmlFor='attenuationLevel'> Attenuation Level </label>
+            <strong><label htmlFor='attenuationLevel'> Attenuation Level </label></strong>
+            <br />
             <input type='number' name='attenuationLevel' value={attenuationLevel} onChange={handleAttenuationLevelChange} />
             <br />
-            <label htmlFor='contributedBy'> Contributed by </label>
+            <strong><label htmlFor='contributedBy'> Contributed by </label></strong>
+            <br />
             <input type='text' name='contributedBy' value={contributedBy} onChange={handleContributedByChange} />
             <br />
-
+            
             <button> ADD NEW </button>
         </form>
 
